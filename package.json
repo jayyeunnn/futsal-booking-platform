@@ -11,7 +11,8 @@
     "start": "next start",
     "lint": "next lint",
     "db:seed": "tsx prisma/seed.ts",
-    "vapid:generate": "tsx scripts/generate-vapid-keys.ts"
+    "vapid:generate": "tsx scripts/generate-vapid-keys.ts",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.11.2",
